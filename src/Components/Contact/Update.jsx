@@ -73,7 +73,7 @@ const Update = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center">
-                    <button className="bg-cyan-50 p-4 text-base font-medium tracking-widest hover:shadow-md lg:w-[300px] rounded uppercase " >
+                    <button className="bg-blue-500 p-3 text-white hover:bg-blue-700 text-base font-medium tracking-widest hover:shadow-md lg:w-[300px] rounded uppercase ">
                         Update
                     </button>                                                                    
                 </div>
