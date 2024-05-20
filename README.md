@@ -39,6 +39,21 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+
+Once the application is running, you will be able to navigate through its various features using the provided user interface.
+
+### API Information:
+
+API used : https://disease.sh/v3/covid-19
+
+This API endpoint provides real-time COVID-19 statistics and data from various countries and regions such as total cases, active cases, recovered cases, deaths, historical data, and more.
+
+The application utilizes this API endpoint to fetch COVID-19 data, which is then displayed to the user in various formats such as charts, maps, etc.
+
+Note: Ensure that you have a stable internet connection while running the application to fetch data from the API endpoint successfully.
+
+The application may include features such as viewing COVID-19 statistics, creating and managing contacts, displaying charts and maps, etc.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SideBar from './Components/SideBar/SideBar';
+import ContactPage from './Components/Contact/ContactPage';
+import Create from './Components/Contact/Create';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Update from './Components/Contact/Update';
+import ChartsAndMaps from './Components/Charts/ChartsAndMaps';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+      <SideBar />
+      <Routes>
+        <Route path='/' element={<ContactPage/>} />
+        <Route path='/create' element={<Create />}/>
+        <Route path='/edit/:id' element={<Update />}/>
+        <Route path='/chartsmaps' element={<ChartsAndMaps />}/>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
